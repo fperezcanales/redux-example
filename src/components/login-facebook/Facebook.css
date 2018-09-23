@@ -1,0 +1,16 @@
+
+
+.login-person {
+    color: white;
+    float: right;
+    overflow: auto;
+}
+
+.login-person img {
+    width: 35px;
+    border-radius: 50%;
+}
+.login-person label {
+    font-size: 11px;
+    margin-left: 11px
+}
