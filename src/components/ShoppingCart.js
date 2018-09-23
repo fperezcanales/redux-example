@@ -14,13 +14,17 @@ const ShoppingCart = (props) => {
 
     return (
       <Panel header="Shopping Cart">
+
         <Table fill>
           <tbody>
             { props.cart.map(product =>
               <tr key={product.id}>
-                <td>{product.name}</td>
+                <td>{product.name} 
+                  <h6 className="card-subtitle mb-2 text-muted">Descripcion </h6> 
+                </td>
                 <td className="text-right">${product.price}</td>
                 <td className="text-right"><Button bsSize="xsmall" bsStyle="danger" onClick={() =>  props.removeFromCart(product)}><Glyphicon glyph="trash" /></Button></td>
+                
               </tr>
             )}
           </tbody>
